@@ -1,0 +1,8 @@
+registry:
+    image: registry
+    environment:
+      - STORAGE_PATH=/registry
+    volumes:
+      - registry-stuff:/registry
+    ports:
+      - "5000:5000"
